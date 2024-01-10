@@ -1,0 +1,96 @@
+:root{
+    --meroon: rgb(44, 6, 31);
+    --gray: rgb(55, 64, 69);
+    --orange: rgb(216, 146, 22);
+    --fadedYellow: rgb(240, 233, 188);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: var(--gray);
+    font-family: 'Poppins', sans-serif;
+}
+
+.container{
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 4%;
+    color: var(--fadedYellow);
+    
+}
+
+.container > h1{
+    font-size: 50px;
+    letter-spacing: 3px;
+}
+
+.container > h3{
+    font-size: 30px;
+    letter-spacing: 2px;
+    align-content: center;
+}
+
+.green{
+    color: #39FF14;
+}
+
+.passwordDiv{
+    background-color: #fff;
+    height: 5%;
+    width: 40%;
+    min-height: 50px;
+    min-width: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 15px;
+    border-radius: 50px;
+}
+
+.passwordDiv > input{
+    outline: none;
+    border: none;
+    width: 90%;
+    padding: 10px;
+    border-radius: 40px;
+    background-color: transparent;
+    font-size: 15px;
+    font-weight: 600;
+    color: var(--meroon);
+}
+
+.passwordDiv > span{
+    background-color: transparent;
+}
+
+.passwordDiv > span > i{
+    background-color: transparent;
+    font-size: 20px;
+    color: var(--meroon);
+}
+
+.generator{
+    width: 300px;
+    height: 50px;
+    border-radius: 30px;
+    border: none;
+    background-color: var(--meroon);
+    color: var(--orange);
+    font-size: 20px;
+}
+
+@media screen and (max-width: 767px) {
+    .container h3 {
+    font-size: 15px;
+  }
+    .container h1 {
+    font-size: 30px;
+  }
+  
+}
