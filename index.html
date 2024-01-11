@@ -21,10 +21,12 @@
       <h1>Welcome</h1>
       <h3>Create your own secure <span class="green">Password</span></h3>
       <div class="passwordDiv">
-        <input type="text" readonly value="1s5dfgasv1as6d5falskdowiej"/>
-        <span><i class="fa-solid fa-copy"></i></span>
+        <input type="text" readonly class="inputBar" />
+        <span><i class="fa-solid fa-copy" onclick="copyPass()"></i></span>
       </div>
-      <button class="generator">Generate Password</button>
+      <button class="generator" onclick="generatePass()">Generate Password</button>
+      <p class="para">We won't save your password. Look at our <a class="btn" href="https://github.com/Tamalckb531/passwordGenerator" target="_blank">code</a> for further query .</p>
+      
     </div>
    
     <script
